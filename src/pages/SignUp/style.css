@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans";
+}
+.nav-bar {
+  position: fixed;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(50%);
+  width: 50%;
+  padding: 20px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  border-radius: 25px;
+  color: white;
+  z-index: 2;
+}
+/* Navbar Buttons */
+.nav-bar .nav-buttons {
+  display: flex;
+  margin: 0 auto;
+  padding-left: 12%;
+  gap: 20px;
+}
+.icon {
+  height: 15px;
+  width: 15px;
+  transition: all 0.3s;
+}
+.nav-bar .nav-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 22px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.nav-bar .nav-buttons button:hover {
+  color: #fff;
+  text-shadow: 0 0 3px #faebeb, 0 0 6px #fff;
+}
+.nav-bar .nav-buttons button:hover .icon {
+  filter: drop-shadow(0 0 3px #fff);
+}
+
+/* Download Button */
+.nav-bar .download-btn > button {
+  background: #0075ff;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  border: none;
+  padding: 6% 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.nav-bar .download-btn > button:hover {
+  background: #0160cc;
+}
+
+/* Containers */
+.container {
+  display: flex;
+  height: 100vh;
+}
+/* İmg Container */
+.img-container {
+  background-image: url(../../assets/images/sign-up-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  height: 100%;
+  flex: 1;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container .img-items p {
+  color: #fff;
+  font-family: "Plus Jakarta Display", sans-serif;
+  padding: 0;
+  margin: 15px 0;
+}
+.img-container .img-items .item-1 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-left: 40px;
+  text-align: center;
+  margin-top: 15%;
+}
+.img-container .img-items .item-2 {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+/* Form Container */
+.form-container {
+  flex: 1;
+  background: linear-gradient(to bottom, #0f123b 0%, #090d2e 59%, #020515 100%);
+  display: grid;
+}
+.form {
+  position: absolute;
+  left: 55%;
+  top: 15%;
+  z-index: 10;
+  text-align: center;
+  display: grid;
+  flex-direction: column;
+  width: 28%;
+  row-gap: 8px;
+}
+.form-header h1 {
+  color: #fff;
+  margin-bottom: 0;
+  font-family: "Plus Jakarta Display", sans-serif;
+  font-size: 35px;
+}
+.form-header p {
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+  margin: 2% 10% 7% 10%;
+}
+.create-acount {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 1% 10%;
+}
+.register-container h3 {
+  color: #fff;
+  font-family: "Plus Jakarta Display", sans-serif;
+  letter-spacing: 1px;
+}
+.register-container p {
+  color: #a0aec0;
+  font-family: "Plus Jakarta Display", sans-serif;
+}
+.register-container .registers {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+}
+.register-container .registers button {
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.register-container .registers button:hover {
+  background: rgba(255, 255, 255, 0.116);
+}
+.form-label {
+  color: #fff;
+  display: block;
+  margin: 5px 8px;
+  font-size: 13px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: left;
+}
+.form-input {
+  padding-bottom: 3%;
+}
+.input-container input {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding-left: 7%;
+  background: rgba(255, 255, 255, 0.05);
+  color: #a0aec0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  transition: all 0.3s;
+}
+.input-container input::placeholder {
+  color: #a0aec0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.input-container input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.342);
+}
+.input-container input:focus {
+  background: rgba(255, 255, 255, 0.05);
+  outline: 1px solid rgba(255, 255, 255, 0.342);
+}
+
+/* Switch container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 26px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #0075ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+/* Checkbox Container */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+.form-checkbox p {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.form-button {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+.form-button button {
+  width: 250%;
+  height: 45px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background-color: #0075ff;
+  border: none;
+  transition: all 0.4s;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Plus Jakarta Display", sans-serif;
+  font-weight: bold;
+}
+.form-button button:hover {
+  background: #0160cc;
+}
+/* Sign in link */
+.form-signIn-link {
+  color: #a0aec0;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.form-signIn-link a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Plus Jakarta Display", sans-serif;
+  font-weight: bold;
+}
+.form-signIn-link a:hover {
+  text-decoration: underline;
+}
+/* Form Footer */
+.form-footer {
+  margin-bottom: 10px;
+}
+.form-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.form-footer li a {
+  color: rgb(148, 148, 148);
+  text-decoration: none;
+  font-size: 14px;
+}
+.form-footer li a:hover {
+  text-decoration: underline;
+}

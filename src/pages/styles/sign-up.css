@@ -1,0 +1,161 @@
+.create-acount {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.register-container h3 {
+  color: #fff;
+  font-family: "Plus Jakarta Display", sans-serif;
+  letter-spacing: 1px;
+  font-size: clamp(16px, 3vw, 20px);
+  margin-bottom: 15px;
+}
+
+.register-container p {
+  color: #a0aec0;
+  font-family: "Plus Jakarta Display", sans-serif;
+}
+
+.register-container .registers {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.register-container .registers button {
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container .registers button:hover {
+  background: rgba(255, 255, 255, 0.116);
+}
+
+.register-container .registers button svg {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1024px) {
+  .nav-bar {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .nav-bar .nav-buttons {
+    gap: 10px;
+  }
+
+  .nav-bar .nav-buttons button {
+    font-size: 11px;
+  }
+
+  .nav-bar .download-btn > button {
+    padding: 8px 20px;
+    font-size: 11px;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .img-container {
+    min-height: 300px;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+  .form {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .nav-bar {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .download-btn > button {
+    padding: 8px 20px;
+    font-size: 11px;
+  }
+  .form-footer ul {
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .nav-bar .nav-buttons {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .img-container {
+    min-height: 350px;
+  }
+
+  .item-1 {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .item-2 {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+
+  .form {
+    max-width: 60%;
+  }
+
+  .input-container input {
+    height: 40px;
+  }
+  .form-footer ul {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar .nav-buttons {
+    padding-left: 0;
+  }
+  .nav-bar .nav-buttons button {
+    font-size: 10px;
+    gap: 2px;
+  }
+  .icon {
+    height: 12px;
+    width: 12px;
+  }
+  .create-acount {
+    padding: 20px 15px;
+  }
+
+  .register-container .registers button {
+    width: 55px;
+    height: 55px;
+  }
+
+  .register-container .registers button svg {
+    width: 20px;
+    height: 20px;
+  }
+}

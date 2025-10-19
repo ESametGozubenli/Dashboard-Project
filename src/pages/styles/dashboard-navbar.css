@@ -1,0 +1,71 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 18%;
+  font-family: "Plus Jakarta Display", sans-serif;
+}
+/* Location  */
+.location {
+  display: grid;
+  padding: 0;
+  margin: 0;
+}
+.location p {
+  color: #fff;
+  margin: 0;
+  font-size: 15px;
+    font-family: "Plus Jakarta Display", sans-serif;
+
+}
+.location-path {
+  display: flex;
+  align-items: center;
+  margin-top: 30%;
+  margin-bottom: 5px;
+}
+.location-path p {
+  font-size: 14px;
+}
+.location-path > p:first-of-type {
+  color: #a0aec0;
+}
+/* Rigth */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #0f1535;
+  border-radius: 15px;
+  border: 1px solid rgb(83, 83, 83);
+  height: 40px;
+  width: 200px;
+}
+.search-bar input {
+  background: transparent;
+  border: none;
+  color: #a0aec0;
+}
+.search-bar input:focus {
+  outline: none;
+}
+
+.rigth-navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rigth-navbar button {
+  background: transparent;
+  border: none;
+  gap: 5px;
+  cursor: pointer;
+}
+.rigth-navbar .signIn-btn button {
+  color: #a0aec0;
+  display: flex;
+  align-items: center;
+}
+.rigth-navbar .signIn-btn path {
+  fill: #a0aec0;
+}
